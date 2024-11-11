@@ -112,8 +112,66 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="program" id="program">
+          <div className="container">
+            <h2>Program</h2>
+            <div className="row">
+              <div className="left">
+                <div className="item">
+                  <h3>9:00</h3>
+                  <p>
+                    Zahájení akce a slavnostní otevření Odpočívárny pod vedením ředitele školy Ing. Miloše Hölzla
+                  </p>
+                </div>
+                <div className="item">
+                  <h3>14:00</h3>
+                  <p>
+                    Zápas ve vybíjené mezi studenty a učiteli (zápas bude večer vysílán na internetu)
+                  </p>
+                </div>
+                <div className="item">
+                  <h3>20:00</h3>
+                  <p>
+                    Beseda s pracovníky školy
+                  </p>
+                </div>
+                <div className="item">
+                  <h3>23:00</h3>
+                  <p>
+                    Ohňostroj a zakončení akce tančícími kuchařkami
+                  </p>
+                </div>
 
+              </div>
+              <div className="right">
+                <div className="item big">
+                  <h3>Celý den</h3>
+                  <p>
+                    Občerstvení a grilování, sladké dobroty a zmrzlina, učitelský sbor v roli obsluhy
+                  </p>
+                </div>
+                <div className="item">
+                  <h3>
+                    Hudební vystoupení
+                  </h3>
+                </div>
+                <div className="item-group">
+                  <div className="item-border">
+                    <p>
+                      <b>Chlapecký pěvecký sbor Dori Bimbo Bim</b> (studenti tříd 4TA a 4TB)
+                    </p>
+                  </div>
+                  <div className="item-border">
+                    <p>
+                      <b>Kapela Pískomil a Hračky v kuchyni</b> (oblíbená kolínská kapela)
+                    </p>
+                  </div>
 
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="about-kratom" id="about-kratom">
           <div className="container">
             <div className="row">

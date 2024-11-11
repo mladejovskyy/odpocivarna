@@ -10,8 +10,8 @@
 
 /* Background color change on scroll */
 .nav.scrolled {
-    background-color: #fff;
-    box-shadow: 0 5px 6px -1px rgba(255, 255, 255, 0.25);
+    background-color: #131313;
+    box-shadow: 0 5px 6px -1px rgba(0, 0, 0, 0.25);
 }
 
 nav {
@@ -55,7 +55,7 @@ nav ul li span {
 }
 
 nav ul li span:hover {
-    color: #6553c9;
+    color: #F07D2C;
 }
 
 /* Burger menu styles for small screens */
@@ -69,7 +69,7 @@ nav .burger-menu {
 nav .burger-menu .bar {
     width: 25px;
     height: 3px;
-    background-color: #131313;
+    background-color: #fff;
 }
 
 /* Responsive styles */
@@ -90,7 +90,7 @@ nav .burger-menu .bar {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #fff;
+        background-color: #131313;
         gap: 50px;
         transform: translateY(-10px); /* Slight initial translate to enhance effect */
         transition: max-height 0.3s ease-in-out, padding 0.4s ease-in-out, opacity 0.3s ease-in-out, transform 0.4s ease;

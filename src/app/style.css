@@ -35,6 +35,35 @@
     display: flex;
     gap: 20px;
 }
+
+@media (max-width: 1536px) {
+    .hero .row {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero .row {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero .row {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        padding-bottom: 80px;
+    }
+
+    .hero p {
+        max-width: 100%;
+    }
+}
+
 /********* ABOUT ME *********/
 .about-action {
     padding-top: 80px;
@@ -91,6 +120,7 @@
     .about-action .item:last-of-type {
         width: 100%;
         flex-direction: row;
+        margin-bottom: auto;
     }
 
     .about-action .item img {
@@ -124,10 +154,78 @@
     max-height: 40px;
 }
 
+/********* PROGRAM *********/
+.program {
+    padding-top: 80px;
+}
 
+.program .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 32px;
+}
 
+.program .left, .program .right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
 
-/********* ABOUT ME *********/
+.program .row .item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #F07D2C;
+    min-height: 118px;
+    padding: 32px 24px;
+}
+
+.program .item.big {
+    min-height: calc(118px * 2 + 30px + 22px);
+}
+
+.program .item h3, .program .item p {
+    color: #fff;
+}
+.program .item h3 {
+    font-weight: 700;
+    font-size: 48px;
+}
+.program .item p {
+    font-size: 18px;
+}
+
+.program .item-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.program .item-group .item-border {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 2px solid #F07D2C;
+    min-height: 118px;
+    padding: 24px 16px;
+}
+
+@media (max-width: 1024px) {
+    .program .row {
+        grid-template-columns: 1fr;
+    }
+
+    .program .left, .program .right {
+        grid-template-columns: 1fr;
+    }
+
+    .program .item-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+/********* ABOUT LEPSI MISTO *********/
 .about-kratom {
     padding-top: 80px;
 }
@@ -183,6 +281,7 @@
     .about-kratom .item:last-of-type {
         width: 100%;
         flex-direction: row;
+        margin-bottom: auto;
     }
 
     .about-kratom .item img {
@@ -197,10 +296,6 @@
 }
 
 /********* PARTNERI *********/
-.partneri {
-    padding-top: 48px;
-}
-
 .partneri .marquee {
     display: flex;
     align-items: center !important;

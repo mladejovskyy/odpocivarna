@@ -31,3 +31,9 @@
     font-weight: 400;
     color: #fff;
 }
+
+@media (max-width: 1280px) {
+    .countdown-container {
+        flex-wrap: wrap;
+    }
+}

@@ -74,21 +74,20 @@ export default function Navbar() {
                     <span className="bar"></span>
                 </div>
                 <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-                    <li onClick={() => scrollToTarget('portfolio')} data-aos="fade-down" data-aos-once="true"
-                        data-aos-delay="0"><span>Portfolio</span>
+                    <li onClick={() => scrollToTarget('about-action')} data-aos="fade-down" data-aos-once="true"
+                        data-aos-delay="0"><span>O akci</span>
                     </li>
-                    <li onClick={() => scrollToTarget('whyus')} data-aos="fade-down" data-aos-once="true"
-                        data-aos-delay="100"><span>Proč my?</span>
+                    <li onClick={() => scrollToTarget('program')} data-aos="fade-down" data-aos-once="true"
+                        data-aos-delay="100"><span>Program</span>
                     </li>
-                    <li onClick={() => scrollToTarget('reference')} data-aos="fade-down" data-aos-once="true"
-                        data-aos-delay="200"><span>Reference</span>
+                    <li onClick={() => scrollToTarget('about-kratom')} data-aos="fade-down" data-aos-once="true"
+                        data-aos-delay="200"><span>Lepší místo</span>
                     </li>
-                    <li onClick={() => scrollToTarget('faq')} data-aos="fade-down" data-aos-once="true"
-                        data-aos-delay="300"><span>Časté dotazy</span>
+                    <li onClick={() => scrollToTarget('partners')} data-aos="fade-down" data-aos-once="true"
+                        data-aos-delay="300"><span>Partneři</span>
                     </li>
                     <li data-aos="fade-down" data-aos-once="true" data-aos-delay="500">
-                        <button onClick={() => scrollToTarget('contact')} className={`btn btn-primary`}>Konzultace
-                            zdarma
+                        <button onClick={() => scrollToTarget('contact')} className={`btn btn-primary`}>Chci se zúčastnit
                         </button>
                     </li>
                 </ul>
