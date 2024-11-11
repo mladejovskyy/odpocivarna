@@ -53,7 +53,7 @@ export default function Footer() {
                             <li onClick={() => scrollToTarget('about-action')}>O akci</li>
                             <li onClick={() => scrollToTarget('program')}>Program</li>
                             <li onClick={() => scrollToTarget('about-kratom')}>Lepší místo</li>
-                            <li onClick={() => scrollToTarget('partners')}>Partneři</li>
+                            <li onClick={() => scrollToTarget('partneri')}>Partneři</li>
                             <li onClick={() => scrollToTarget('contact')}>Kontakt</li>
                         </ul>
                     </div>

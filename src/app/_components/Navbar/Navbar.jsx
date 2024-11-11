@@ -83,7 +83,7 @@ export default function Navbar() {
                     <li onClick={() => scrollToTarget('about-kratom')} data-aos="fade-down" data-aos-once="true"
                         data-aos-delay="200"><span>Lepší místo</span>
                     </li>
-                    <li onClick={() => scrollToTarget('partners')} data-aos="fade-down" data-aos-once="true"
+                    <li onClick={() => scrollToTarget('partneri')} data-aos="fade-down" data-aos-once="true"
                         data-aos-delay="300"><span>Partneři</span>
                     </li>
                     <li data-aos="fade-down" data-aos-once="true" data-aos-delay="500">
