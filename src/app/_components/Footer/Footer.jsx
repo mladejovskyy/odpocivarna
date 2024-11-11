@@ -6,6 +6,8 @@ import {useRouter} from 'next/navigation'; // For Next.js 13 or newer
 export default function Footer() {
     const router = useRouter();
 
+
+    // function to scroll to target section
     const scrollToTarget = async (sectionId) => {
         const currentPath = window.location.pathname;
 

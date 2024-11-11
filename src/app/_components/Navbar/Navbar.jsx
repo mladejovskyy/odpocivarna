@@ -5,14 +5,19 @@ import Link from 'next/link';
 import {useRouter} from 'next/navigation';
 
 export default function Navbar() {
+    // State to manage menu open/close
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const router = useRouter();
 
+
+    //  Function to toggle menu
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
+
+    //  Function to handle scroll
     const handleScroll = () => {
         if (window.scrollY > 200) {
             setScrolled(true);
@@ -21,6 +26,8 @@ export default function Navbar() {
         }
     };
 
+
+    //  Add event listener to handle scroll
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
