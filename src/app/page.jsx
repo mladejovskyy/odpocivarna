@@ -9,6 +9,7 @@ import Navbar from './_components/Navbar/Navbar';
 import Footer from './_components/Footer/Footer';
 import Countdown from "@/app/_components/Countdown/Countdown";
 import Marquee from "@/components/ui/marquee";
+import Contact from "@/app/_components/Contact/Contact";
 
 export default function Home() {
   useEffect(() => {
@@ -205,6 +206,14 @@ export default function Home() {
                     <ReviewCard key={review.img} {...review} />
                 ))}
               </Marquee>
+        </section>
+        <section className="contact" id="contact">
+          <div className="container">
+            <h2>Kontakt</h2>
+            <div className="row">
+              <Contact/>
+            </div>
+          </div>
         </section>
       </main>
       <Footer/>

@@ -50,10 +50,10 @@ export default function Footer() {
                     <div className="item right">
                         <h3 className='sm-show'>Navigace</h3>
                         <ul>
-                            <li onClick={() => scrollToTarget('portfolio')}>Portfolio</li>
-                            <li onClick={() => scrollToTarget('whyus')}>Proč my?</li>
-                            <li onClick={() => scrollToTarget('reference')}>Reference</li>
-                            <li onClick={() => scrollToTarget('faq')}>Časté dotazy</li>
+                            <li onClick={() => scrollToTarget('about-action')}>O akci</li>
+                            <li onClick={() => scrollToTarget('program')}>Program</li>
+                            <li onClick={() => scrollToTarget('about-kratom')}>Lepší místo</li>
+                            <li onClick={() => scrollToTarget('partners')}>Partneři</li>
                             <li onClick={() => scrollToTarget('contact')}>Kontakt</li>
                         </ul>
                     </div>
