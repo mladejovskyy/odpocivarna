@@ -68,8 +68,8 @@ export default function Home() {
               <p>Přijměte pozvání na slavnostní otevření Odpočívárny na Střední odborné škole informatiky a spojů v
                 Kolíně, které se uskuteční 26.6.2024 od 9:00. Otevření povede ředitel školy Ing. Miloš Hölzel.</p>
               <div className="btns-row">
-                <button className="btn btn-primary">Zúčastním se</button>
-                <button className="btn">Zjistít více</button>
+                <button onClick={() => scrollToTarget('contact')} className="btn btn-primary">Zúčastním se</button>
+                <button onClick={() => scrollToTarget('about-action')} className="btn">Zjistít více</button>
               </div>
             </div>
           </div>
