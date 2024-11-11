@@ -2,16 +2,20 @@ import React, { useState, useEffect } from 'react';
 import './Countdown.css'
 
 const Countdown = () => {
+    // Set the date we're counting down to
     const targetDate = new Date('2025-06-26T09:00:00'); // Target date: June 26, 2024, 9:00 AM
 
+    // Calculate the time left until the target date
     const calculateTimeLeft = () => {
         const now = new Date();
         const difference = targetDate - now;
 
+        // If the target date is passed, return 0
         if (difference <= 0) {
             return { days: 0, hours: 0, minutes: 0, seconds: 0 }; // If the target date is passed
         }
 
+        // Calculate time left
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
         const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
@@ -20,8 +24,11 @@ const Countdown = () => {
         return { days, hours, minutes, seconds };
     };
 
+    // Set the time left until the target date
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
+
+    // Update the time left every second
     useEffect(() => {
         const timer = setInterval(() => {
             setTimeLeft(calculateTimeLeft());

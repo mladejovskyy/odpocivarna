@@ -17,6 +17,8 @@ export default function Home() {
     AOS.init();
   }, []);
 
+
+  // function to scroll to target section
   const scrollToTarget = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
