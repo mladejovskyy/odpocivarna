@@ -1,0 +1,155 @@
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./globals.css";
+import "./style.css";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Navbar from './_components/Navbar/Navbar';
+import Footer from './_components/Footer/Footer';
+import Countdown from "@/app/_components/Countdown/Countdown";
+import Marquee from "@/components/ui/marquee";
+
+export default function Home() {
+  useEffect(() => {
+    //load aos animations
+    AOS.init();
+  }, []);
+
+  const scrollToTarget = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const firstRow = [
+    {
+      img: "/images/partner1.webp",
+      alt: "",
+    },
+    {
+      img: "/images/partner2.webp",
+      alt: "",
+    },
+    {
+      img: "/images/partner3.webp",
+      alt: "",
+    },
+    {
+      img: "/images/partner4.webp",
+      alt: "",
+    },
+    {
+      img: "/images/partner5.webp",
+      alt: "",
+    },
+  ];
+
+  const ReviewCard = ({img, alt}) => {
+    return (
+        <div>
+          <div className="flex reviewCard flex-row items-center gap-2">
+            <img src={img} alt={alt}/>
+          </div>
+        </div>
+    )
+  }
+
+  return (
+    <>
+      <Navbar />
+      <main>
+        <section className='hero' id='hero'>
+          <div className="container">
+            <div className="row">
+              <h1>Slavnostní otevření odpočívací místnosti</h1>
+              <p>Přijměte pozvání na slavnostní otevření Odpočívárny na Střední odborné škole informatiky a spojů v
+                Kolíně, které se uskuteční 26.6.2024 od 9:00. Otevření povede ředitel školy Ing. Miloš Hölzel.</p>
+              <div className="btns-row">
+                <button className="btn btn-primary">Zúčastním se</button>
+                <button className="btn">Zjistít více</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="about-action" id="about-action">
+          <div className="container">
+            <div className="row">
+              <div className="item">
+                <h2>O akci</h2>
+                <p>
+                  Zveme vás na slavnostní otevření Odpočívárny na Střední odborné škole informatiky a spojů v Kolíně,
+                  které se uskuteční 26. června 2024 od 9:00 hodin pod vedením ředitele školy, Ing. Miloše Hölzla.
+                </p>
+                <p>
+                  K dispozici bude bohaté občerstvení po celý den – od grilovaných specialit a domácích pochoutek až po
+                  sladké dezerty a zmrzlinu pro všechny milovníky sladkého. Učitelský sbor vás obslouží v netradičních
+                  rolích a postará se o zábavnou atmosféru. Akce nabízí ideální prostředí pro odpočinek a příjemná
+                  setkání.
+                </p>
+              </div>
+              <div className="item">
+                <img
+                    src="/images/about-img.webp"
+                    alt=""
+                    draggable="false"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="countdown" id="countdown">
+          <div className="container">
+            <div className="row">
+              <Countdown/>
+              <div className="location">
+                <img src="/images/location-icon.webp" alt=""/>
+                Jaselská 767, Kolín
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section className="about-kratom" id="about-kratom">
+          <div className="container">
+            <div className="row">
+              <div className="item">
+                <h2>O projektu lepší místo</h2>
+                <p>
+                  Lepší Místo je projekt společnosti KratomWorld, která se věnuje zajišťování kvalitního kratomu pro své zákazníky. Tento projekt má za cíl podpořit komunitu a zlepšit veřejný prostor v českých městech. Lepší Místo umožňuje lidem sdílet nápady na zvelebení svého okolí, hlásit problémy ve veřejném prostoru a podporovat iniciativy, které přispívají ke zdravému a příjemnému životnímu prostředí.
+                </p>
+                <p>
+                  Díky spolupráci místních obyvatel, firem a veřejné správy se tak projekt snaží vytvářet lepší podmínky pro každodenní život a podporovat pozitivní změny v komunitách.
+                </p>
+              </div>
+              <div className="item">
+                <img
+                    src="/images/lepsi-misto-img.webp"
+                    alt=""
+                    draggable="false"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="partneri" id="partneri">
+          <div className="container">
+            <h2>Partneři</h2>
+          </div>
+              <Marquee pauseOnHover className="[--duration:40s]">
+                {firstRow.map((review) => (
+                    <ReviewCard key={review.img} {...review} />
+                ))}
+              </Marquee>
+        </section>
+      </main>
+      <Footer/>
+    </>
+  );
+}

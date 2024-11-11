@@ -1,0 +1,215 @@
+.hero {
+    padding-top: 6rem;
+    background-image: url('/images/hero-bg.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+}
+
+.hero .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 5rem !important;
+}
+
+.hero h1 {
+    font-weight: 700;
+}
+
+.hero h1, .hero p {
+    text-align: center;
+}
+
+.hero p {
+    color: #fff;
+    margin-top: 12px;
+    max-width: 80%;
+}
+
+.hero .btns-row {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+/********* ABOUT ME *********/
+.about-action {
+    padding-top: 80px;
+}
+
+.about-action .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    gap: 128px;
+}
+
+.about-action .item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-action .item p {
+    max-width: 100%;
+}
+
+.about-action .item img {
+    max-height: 85%;
+}
+
+.about-action .item:last-of-type {
+    align-items: flex-end;
+}
+
+.about-action p {
+    margin-top: 16px;
+}
+
+.about-action .btns-row {
+    margin-top: 42px;
+}
+
+@media (max-width: 1280px) {
+    .about-action .row {
+        gap: 48px;
+    }
+
+    .about-action .item:last-of-type {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-action .row {
+        grid-template-columns: 1fr;
+    }
+
+    .about-action .item:last-of-type {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .about-action .item img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-action {
+        padding-top: 80px;
+    }
+}
+
+/********* Countdown *********/
+.countdown .row{
+    display: grid;
+    gap: 24px;
+    place-items: center;
+}
+
+.countdown .location {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 600;
+    color: #131313;
+    font-size: 24px;
+}
+
+.countdown .location img {
+    max-height: 40px;
+}
+
+
+
+
+/********* ABOUT ME *********/
+.about-kratom {
+    padding-top: 80px;
+}
+
+.about-kratom .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    gap: 64px;
+}
+
+.about-kratom .item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-kratom .item p {
+    max-width: 100%;
+}
+
+.about-kratom .item img {
+    max-height: 80%;
+}
+
+.about-kratom .item:last-of-type {
+    align-items: flex-end;
+}
+
+.about-kratom p {
+    margin-top: 16px;
+}
+
+.about-kratom .btns-row {
+    margin-top: 42px;
+}
+
+@media (max-width: 1280px) {
+    .about-kratom .row {
+        gap: 48px;
+    }
+
+    .about-kratom .item:last-of-type {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-kratom .row {
+        grid-template-columns: 1fr;
+    }
+
+    .about-kratom .item:last-of-type {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .about-kratom .item img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-kratom {
+        padding-top: 80px;
+    }
+}
+
+/********* PARTNERI *********/
+.partneri {
+    padding-top: 48px;
+}
+
+.partneri .marquee {
+    display: flex;
+    align-items: center !important;
+    gap: 48px !important;
+}
+
+.partneri .marquee div {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap: 32px;
+}

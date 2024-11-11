@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/*======== BREAKPOINTS ========*/
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 640px) {
+}
+
+@media (max-width: 450px) {
+}
+
+/*======== CONTAINER ========*/
+.container {
+  width: 100%;
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 85vw;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 450px) {
+}
+
+/*======== Headings ========*/
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #131313;
+  margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #6553c9;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+p {
+  color: #333333;
+}
+
+@media (max-width: 1536px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+/*======== BUTTONS ========*/
+.btn {
+  padding: 16px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1px;
+  transition: all 0.2s;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #F07D2C;
+  color: #131313;
+  border: 1px solid #F07D2C;
+}
+
+.btn-primary:hover {
+  background-color: #e57627;
+}
+
+.btn-secondary {
+  background-color: #e6c200;
+  color: #000;
+  border: 1px solid #e6c200;
+}
+
+.btn-secondary:hover {
+  background-color: #ccac00;
+  border-color: #ccac00;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #6553c9;
+}
+
+.btn-simple {
+  color: #000;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
